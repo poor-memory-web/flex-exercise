@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        div.flex-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 0 auto;
+            width: 90%;
+            height: 600px;
+            background-color: chartreuse;
+        }
+        div.flex-item{
+            display: flex;
+            /* با این دو پراپرتی پایین به راحتی می تواان تمام محتواهای داخل هر دایو رو وسط چین کرد */
+            align-items: center;
+            justify-content: center;
+
+            height: 150px;
+            width: 250px;
+            background-color: chocolate;
+            font-size: 35px;
+            font-weight: bold;
+            font-size: impact;
+            border: 2px black solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">Box number 1</div>
+        <div class="flex-item">Box number 2</div>
+        <div class="flex-item">Box number 3</div>
+        <div class="flex-item">Box number 4</div>
+    </div>
+</body>
+</html>
