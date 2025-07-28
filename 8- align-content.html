@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        div.flex-container{
+            display: flex;
+
+            /* زمانی می تونیم از الاین کانتنت استفاده کنیم که فلکس رپ فعال باشد */
+            flex-wrap: wrap; 
+
+            align-content: center;
+            /* این اتربیوت از نظر محوری مثل الاین آیتمز است و از نظر مقداری مثل جاستیفای کانتنت */
+            /* درست مثل جاستیفای کانتنت استفاده می شود اما بر خلاف محور فلکس دایرکش اما با فلکس رپ فعال باشد */
+
+            height: 500px;
+            width: 80%;
+            background-color: aqua;
+            margin: 0 auto;
+        }
+        div.flex-item{
+            height: 100px;
+            width: 250px;
+            background-color: chartreuse;
+            border: 2px black solid;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 100px;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: tahoma;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+        <div class="flex-item">7</div>
+        <div class="flex-item">8</div>
+    </div>
+</body>
+</html>
