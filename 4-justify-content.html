@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        div.flex-container{
+            display: flex;
+            justify-content: center;
+            /* پراپرنی جاستیفای کانتنت باعث می شود آیتم ها موافق جهت فلکس دایرکشن مرتب شن و درحالت دیفالت چون  فلکس دایرکشن به صورت افقی هست پس جاستیفای کانتنت ، آیتم هارو به صورت افقی مرتب می کنه */
+            /* justify-content: flex-start; همه ی آیتم هارو به سمت چپ صفحه میبره 
+            justify-content: flex-end; همه ی آیتم هارو به سمت راست صفحه میبره 
+            justify-content: center; همه ی آیتم هارو به وسط صفحه میبره 
+            justify-content: space-between; بین آیتم ها فاصله میندازه و از گوشه های سایت شروع می کنه
+            justify-content: space-around; بین آیتم ها فاصله می ندازه و البته مقداری هم فاصله از گوشه های سایت میندازه اما دو برابر این فاصله رو بین آیتم ها میندازه
+            justify-content: space-evenly; بین آیتم ها و همینطور بین آیتم ها و سایت به یک اندازه ی مساوی فاصله میندازه */
+            height: 500px;
+            width: 80%;
+            background-color: aqua;
+            margin: 0 auto;
+        }
+        div.flex-item{
+            height: 100px;
+            width: 100px;
+            background-color: chartreuse;
+            border: 2px black solid;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 100px;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: tahoma;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+    </div>
+</body>
+</html>
