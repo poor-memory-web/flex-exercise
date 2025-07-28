@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        div.flex-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            height: 500px;
+            width: 90%;
+            background-color: aqua;
+            margin: 0 auto;
+        }
+        div.flex-item{
+            height: 100px;
+            width: 175px;
+            background-color: chartreuse;
+            border: 2px black solid;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 100px;
+            font-size: 30px;
+            font-family: impact;
+            /* فلکس گرو باعث میشه که آیتم های ما به یک اندازه کشیده شدن تا فضای خالی ای باقی نمونه */
+            flex-grow: 1;
+        }
+
+        div.flex-container2{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            height: 500px;
+            width: 90%;
+            background-color: chocolate;
+            margin: 50px auto;
+        }
+        div.flex-item2{
+            height: 100px;
+            width: 175px;
+            background-color: crimson;
+            border: 2px black solid;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 100px;
+            font-size: 30px;
+            font-family: impact;
+        }
+        div.flex-item2:nth-child(2){
+            /* به این شکل می توان فقط بر روی یک آیتم فلکس گرو را اعمال کرد */
+            flex-grow: 1;
+        }
+
+        /* فلکس شیریک دقیقا برعکس فلکس گرو است و باعث می شود آیتم ها جمع تر شود */
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+    </div>
+
+    <div class="flex-container2">
+        <div class="flex-item2">1</div>
+        <div class="flex-item2">2</div>
+        <div class="flex-item2">3</div>
+    </div>
+</body>
+</html>
