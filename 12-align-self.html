@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        div.flex-container{
+            display: flex;
+            height: 500px;
+            width: 80%;
+            background-color: aqua;
+            margin: 0 auto;
+        }
+        div.flex-item{
+            height: 100px;
+            width: 100px;
+            background-color: chartreuse;
+            border: 2px black solid;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 100px;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: tahoma;
+        }
+        div.flex-item:nth-child(3){
+            /* الاین سلف دقیقا مثل الاین آیتمز هست اما فقط بر روی یک آیتم اعمال می شود */
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+    </div>
+</body>
+</html>
